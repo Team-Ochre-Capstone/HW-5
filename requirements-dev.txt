@@ -3,6 +3,7 @@ setuptools
 build
 flake8
 black
+pre-commit
 wheel
 packaging
 -rrequirements.txt
