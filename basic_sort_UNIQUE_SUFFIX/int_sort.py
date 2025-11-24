@@ -28,7 +28,7 @@ def bubble(int_list):
     #     int_list (list): The list of integers to be sorted.
 
     # Returns:
-    #     list: The list of integers that has been sorted from int_list in ascending order.
+    # list: The list of integers sorted from int_list in ascending order.
 
     # Example:
 
@@ -54,7 +54,7 @@ def quick(int_list):
     #     int_list (list): The list of integers to be sorted.
 
     # Returns:
-    #     list: The list of integers that has been sorted from int_list in ascending order.
+    # list: The list of integers sorted from int_list in ascending order.
 
     # Example:
 
@@ -81,7 +81,7 @@ def insertion(int_list):
     #     int_list (list): The list of integers to be sorted.
 
     # Returns:
-    #     list: The list of integers that has been sorted from int_list in ascending order.
+    # list: The list of integers sorted from int_list in ascending order.
 
     # Example:
 
