@@ -16,26 +16,26 @@
 #
 # =========================================================================
 
-"""
-This module sorts lists of integers...
-"""
+
+# This module sorts lists of integers...
+
 
 
 def bubble(int_list):
-    """
-    Sorts a list of integers using the bubble sort algorithm.
+    
+    # Sorts a list of integers using the bubble sort algorithm.
 
-    Args:
-        int_list (list): The list of integers to be sorted.
+    # Args:
+    #     int_list (list): The list of integers to be sorted.
 
-    Returns:
-        list: The list of integers that has been sorted from int_list in ascending order.
+    # Returns:
+    #     list: The list of integers that has been sorted from int_list in ascending order.
 
-    Example:
+    # Example:
 
-        bubble([3, 4, 5, 2, 1, 1, 5])
-        bubble sort[1, 1, 2, 3, 4, 5, 5]
-    """
+    #     bubble([3, 4, 5, 2, 1, 1, 5])
+    #     bubble sort[1, 1, 2, 3, 4, 5, 5]
+    
     arr = int_list[:]  # Copy of original list
     n = len(arr)
 
@@ -49,20 +49,19 @@ def bubble(int_list):
 
 
 def quick(int_list):
-    """
-    Sorts a list of integers using the quicksort algorithm.
+    # Sorts a list of integers using the quicksort algorithm.
 
-    Args:
-        int_list (list): The list of integers to be sorted.
+    # Args:
+    #     int_list (list): The list of integers to be sorted.
 
-    Returns:
-        list: The list of integers that has been sorted from int_list in ascending order.
+    # Returns:
+    #     list: The list of integers that has been sorted from int_list in ascending order.
 
-    Example:
+    # Example:
 
-        quick([3, 4, 5, 2, 1, 1, 5])
-        quick sort[1, 1, 2, 3, 4, 5, 5]
-    """
+    #     quick([3, 4, 5, 2, 1, 1, 5])
+    #     quick sort[1, 1, 2, 3, 4, 5, 5]
+    
     arr = int_list[:]  # Copy of original list
 
     if len(arr) <= 1:
@@ -77,20 +76,19 @@ def quick(int_list):
 
 
 def insertion(int_list):
-    """
-    Sorts a list of integers using the insertion sort algorithm.
+    # Sorts a list of integers using the insertion sort algorithm.
 
-    Args:
-        int_list (list): The list of integers to be sorted.
+    # Args:
+    #     int_list (list): The list of integers to be sorted.
 
-    Returns:
-        list: The list of integers that has been sorted from int_list in ascending order.
+    # Returns:
+    #     list: The list of integers that has been sorted from int_list in ascending order.
 
-    Example:
+    # Example:
 
-        bubble([3, 4, 5, 2, 1, 1, 5])
-        insertion sort[1, 1, 2, 3, 4, 5, 5]
-    """
+    #     bubble([3, 4, 5, 2, 1, 1, 5])
+    #     insertion sort[1, 1, 2, 3, 4, 5, 5]
+    
     arr = int_list[:]  # Copy of original list
 
     for i in range(1, len(arr)):
