@@ -20,9 +20,8 @@
 # This module sorts lists of integers...
 
 
-
 def bubble(int_list):
-    
+
     # Sorts a list of integers using the bubble sort algorithm.
 
     # Args:
@@ -35,7 +34,7 @@ def bubble(int_list):
 
     #     bubble([3, 4, 5, 2, 1, 1, 5])
     #     bubble sort[1, 1, 2, 3, 4, 5, 5]
-    
+
     arr = int_list[:]  # Copy of original list
     n = len(arr)
 
@@ -61,7 +60,7 @@ def quick(int_list):
 
     #     quick([3, 4, 5, 2, 1, 1, 5])
     #     quick sort[1, 1, 2, 3, 4, 5, 5]
-    
+
     arr = int_list[:]  # Copy of original list
 
     if len(arr) <= 1:
@@ -88,7 +87,7 @@ def insertion(int_list):
 
     #     bubble([3, 4, 5, 2, 1, 1, 5])
     #     insertion sort[1, 1, 2, 3, 4, 5, 5]
-    
+
     arr = int_list[:]  # Copy of original list
 
     for i in range(1, len(arr)):
