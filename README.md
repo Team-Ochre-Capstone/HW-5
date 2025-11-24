@@ -32,3 +32,8 @@ Possible work division, three sub-teams:
 2. Implementing testing code, mastering pytest, black, flake8 (tasks 3,4,6).
 3. Understanding pytest, black, flake8 and mastering GitHub workflows (tasks 5,6).
 
+Black Linting (Ethan Wyman)
+Implemented the black linting. Black automatically reformats Python code to adhere to a strict, opinionated style, largely based on PEP 8. It aims for consistency, readability, and minimizing diffs in version control.
+Black Linting was pushed through and reformatted the Python code to follow the style
+https://github.com/psf/black
+https://black.readthedocs.io/en/stable
