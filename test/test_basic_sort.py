@@ -24,9 +24,11 @@ def is_sorted(int_list):
 @pytest.fixture
 def int_lists():
     return [
-        [3, 2, 1], 
-        [1, 1, 1], 
-        list(np.random.randint(low=-10, high=200, size=5)), # Trailing comma forces wrap
+        [3, 2, 1],
+        [1, 1, 1],
+        list(
+            np.random.randint(low=-10, high=200, size=5)
+        ),
     ]
 
 
