@@ -16,12 +16,18 @@ CURRENT_PROCESS = psutil.Process(os.getpid())
 def is_sorted(int_list):
     # Testing oracle. Checks if a list of integers is sorted.
 
-    return all(int_list[i] <= int_list[i + 1] for i in range(len(int_list) - 1))
+    return all(
+        int_list[i] <= int_list[i + 1] for i in range(len(int_list) - 1)
+        )
 
 
 @pytest.fixture
 def int_lists():
-    return [[3, 2, 1], [1, 1, 1], list(np.random.randint(low=-10, high=200, size=5))]
+    return [
+        [3, 2, 1], 
+        [1, 1, 1], 
+        list(np.random.randint(low=-10, high=200, size=5))
+    ]
 
 
 def test_bubble(int_lists):
@@ -45,9 +51,9 @@ def test_bubble(int_lists):
     approx_cpu_usage = (cpu_before + cpu_after) / 2
 
     # Print the measurement for the GitHub Actions log
-    print(f"\n--- MEASUREMENT ---")
+    print("\n--- MEASUREMENT ---")
     print(f"Bubble Sort CPU Usage: {approx_cpu_usage:.2f}%")
-    print(f"-------------------\n")
+    print("-------------------\n")
 
 
 def test_quick(int_lists):
@@ -68,9 +74,9 @@ def test_quick(int_lists):
     runtime = end_time - start_time
 
     # Print the measurement for the GitHub Actions log
-    print(f"\n--- MEASUREMENT ---")
+    print("\n--- MEASUREMENT ---")
     print(f"Quick Sort Runtime: {runtime:.6f}s")
-    print(f"-------------------\n")
+    print("-------------------\n")
 
 
 def test_insertion(int_lists):
@@ -94,6 +100,6 @@ def test_insertion(int_lists):
     memory_overhead_mb = (mem_after - mem_before) / (1024 * 1024)
 
     # Print the measurement for the GitHub Actions log
-    print(f"\n--- MEASUREMENT ---")
-    print(f"Insertion Sort Memory Usage (Overhead): {memory_overhead_mb:.2f} MB")
-    print(f"-------------------\n")
+    print("\n--- MEASUREMENT ---")
+    print(f"Insertion Sort Memory Usage: {memory_overhead_mb:.2f} MB")
+    print("-------------------\n")
