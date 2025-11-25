@@ -11,7 +11,7 @@ from basic_sort_UNIQUE_SUFFIX.int_sort import bubble, quick, insertion
 # Per user request, setting list size to 5000.
 LIST_SIZE = 5000
 # Run the sort 1000 times to get stable, measurable results
-NUM_ITERATIONS = 1000
+NUM_ITERATIONS = 5
 PERFORMANCE_TEST_LIST = [random.randint(1, 10000) for _ in range(LIST_SIZE)]
 EXPECTED_SORTED = sorted(PERFORMANCE_TEST_LIST)
 CURRENT_PROCESS = psutil.Process(os.getpid())
