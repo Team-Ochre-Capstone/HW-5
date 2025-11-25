@@ -5,12 +5,15 @@ requires = ["setuptools>=61.0",
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "basic_sort_UNIQUE_SUFFIX"
+name = "basic_sort_The_Slice_Is_Right"
 version = "0.0.1"
-authors = [{ name="Author1", email="author1@maine.edu" },
-           { name="Author2", email="author2@maine.edu" },
-]
-description = "An exercise in the capstone course"
+authors = [{ name="Bryan Michael Sturdivant", email="bryan.sturdivant@maine.edu" },
+            { name="Cooper Stepankiw", email="cooper.stepankiw@maine.edu" },
+            { name="Ethan Wyman", email="ethan.wyman@maine.edu" },
+            { name="Gregory Michaud", email="gregory.michaud@maine.edu" },
+            { name="Israk Arafat", email="israk.ayasin@maine.edu" }
+              ]
+description = "A Python package for sorting integer lists - COS397 DevOps Exercise"
 readme = "README.md"
 requires-python = ">=3.9.0"
 classifiers = [
@@ -20,6 +23,6 @@ classifiers = [
 ]
 
 [project.urls]
-"Bug Tracker" = "https://github.com/pypa/python_package_exercise/issues"
+"Bug Tracker" = "https://github.com/Team-Ochre-Capstone/HW-5/issues"
 
 
