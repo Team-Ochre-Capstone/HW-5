@@ -7,7 +7,7 @@ import random
 from basic_sort_UNIQUE_SUFFIX.int_sort import bubble, quick, insertion
 
 # --- CONSTANTS AND SETUP ---
-LIST_SIZE = 5000
+LIST_SIZE = 50000
 PERFORMANCE_TEST_LIST = [random.randint(1, 10000) for _ in range(LIST_SIZE)]
 EXPECTED_SORTED = sorted(PERFORMANCE_TEST_LIST)
 CURRENT_PROCESS = psutil.Process(os.getpid())
