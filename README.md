@@ -80,7 +80,7 @@
 
     ✅ Automated package building
 
-        ✅ TestPyPI deployment (optional)
+    ✅ TestPyPI deployment (optional)
 
     ✅ Performance benchmarking
 
