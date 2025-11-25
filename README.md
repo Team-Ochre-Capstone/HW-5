@@ -30,7 +30,7 @@
 
     Security checks for AWS credentials
 
-    itHub Actions Pipeline
+    GitHub Actions Pipeline
 
     Multi-OS testing (Windows, Ubuntu, macOS)
 
@@ -80,7 +80,7 @@
 
     ✅ Automated package building
 
-    ✅ TestPyPI deployment (optional)
+    ✅ TestPyPI deployment
 
     ✅ Performance benchmarking
 
