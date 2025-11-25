@@ -3,6 +3,7 @@
 A Python package implementing and benchmarking three sorting algorithms with comprehensive DevOps CI/CD pipeline.
 
 📋 **Project Overview**
+
 This project demonstrates modern DevOps practices by implementing:
 
 Three sorting algorithms (Bubble Sort, Quick Sort, Insertion Sort)
@@ -16,9 +17,11 @@ Code quality enforcement with pre-commit hooks
 Cross-platform testing on Windows, Linux, and macOS
 
 🚀 **DevOps Workflow**
+
 Our CI/CD pipeline ensures code quality and reliability through:
 
 Pre-commit Hooks
+
 File size limits to prevent large commits
 
 Code formatting with Black
@@ -28,6 +31,7 @@ Linting with Flake8
 Security checks for AWS credentials
 
 GitHub Actions Pipeline
+
 Multi-OS testing (Windows, Ubuntu, macOS)
 
 Multi-Python version support (3.9, 3.10)
@@ -36,23 +40,35 @@ Automated testing with pytest
 
 Package building and distribution
 
-
 📁 **Project Structure**
 
 sorting-algorithms/
 ├── .github/
+
 │   └── workflows/
+
 │       └── main.yml          # CI/CD pipeline
+
 ├── sort_lib/
+
 │   ├── __init__.py
+
 │   ├── int_sort.py        # Contains all sorting algorithms
+
 ├── test/
+
 │   ├── test_basic_sort.py
+
 ├── .flake8
+
 ├── .pre-commit-config.yml    # Pre-commit hooks
+
 ├── pyproject.toml           # Package configuration
+
 ├── README.md                # README
+
 ├── requirements-dev.txt     # Dependencies
+
 └── requirements.txt         # Dependencies
 
 📝 **Code Quality**
@@ -83,18 +99,18 @@ Pre-commit hooks for automatic quality checks
 
 👥 **Team**
 
-Bryan Sturdivant - Pre-commit
+__Bryan Sturdivant__ - Pre-commit
 
-Ethan Wyman - Black Linting
+__Ethan Wyman__ - Black Linting
 
-https://github.com/psf/black
-https://black.readthedocs.io/en/stable
+    https://github.com/psf/black
+    https://black.readthedocs.io/en/stable
 
-Gregory Michaud - Workflows
+__Gregory Michaud__ - Workflows
 
-Israk Akafat - Flake8 Linting
+__Israk Akafat__ - Flake8 Linting
 
-Cooper Stepankiw - Algorithms and README
+__Cooper Stepankiw__ - Algorithms and README
 
 Matrix:
 OS / Python Version     Bubble Sort CPU Usage   Quick Sort Runtime	Insertion Sort Memory Usage
