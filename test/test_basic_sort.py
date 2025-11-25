@@ -16,9 +16,7 @@ CURRENT_PROCESS = psutil.Process(os.getpid())
 def is_sorted(int_list):
     # Testing oracle. Checks if a list of integers is sorted.
 
-    return all(
-        int_list[i] <= int_list[i + 1] for i in range(len(int_list) - 1)
-    )
+    return all(int_list[i] <= int_list[i + 1] for i in range(len(int_list) - 1))
 
 
 @pytest.fixture
@@ -26,9 +24,7 @@ def int_lists():
     return [
         [3, 2, 1],
         [1, 1, 1],
-        list(
-            np.random.randint(low=-10, high=200, size=5)
-        ),
+        list(np.random.randint(low=-10, high=200, size=5)),
     ]
 
 
