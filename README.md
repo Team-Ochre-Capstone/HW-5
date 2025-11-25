@@ -93,7 +93,7 @@ __Ethan Wyman__ - Black Linting
     https://github.com/psf/black
     https://black.readthedocs.io/en/stable
 
-__Gregory Michaud__ - Workflows
+__Gregory Michaud__ - Workflows & Algorithms
 
 __Israk Akafat__ - Flake8 Linting
 
