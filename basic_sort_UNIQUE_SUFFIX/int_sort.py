@@ -43,7 +43,6 @@ def bubble(int_list):
             if arr[j] > arr[j + 1]:  # Swap element if grater than next element
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
-    print("bubble sort")
     return arr
 
 
@@ -70,7 +69,6 @@ def quick(int_list):
     middle = [x for x in arr if x == pivot]
     right = [x for x in arr if x > pivot]
 
-    print("quick sort")
     return quick(left) + middle + quick(right)
 
 
@@ -102,5 +100,4 @@ def insertion(int_list):
         # Place key at after the element just smaller than it
         arr[j + 1] = key
 
-    print("insertion sort")
     return arr
