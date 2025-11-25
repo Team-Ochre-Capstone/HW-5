@@ -100,6 +100,7 @@ __Israk Akafat__ - Flake8 Linting
 __Cooper Stepankiw__ - Algorithms and README
 
 **Matrix:**
+
     OS / Python Version     Bubble Sort CPU Usage   Quick Sort Runtime	Insertion Sort Memory Usage
     macOS (3.9)	            0.05%	                0.021297s	        0.000000 MB
     macOS (3.10)	        0.25%	                0.018475s	        0.000000 MB
