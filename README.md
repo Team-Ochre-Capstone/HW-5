@@ -26,6 +26,15 @@ three operating systems (OSX/Linux/Win) and for Python versions 3.9 and 3.10. Re
 EC. **Optional**: Add a job to the workflow which uploads the wheel to [TestPyPI](https://test.pypi.org/). As every package on TestPyPI is required to have a unique name you need to update the UNIQUE_SUFFIX both in the directory name and in the .toml file. Possibly use your team number.
     >**Warning**: Do not upload to the authoritative Python Package Index (PyPI).  
 
+Matrix:
+OS / Python Version     Bubble Sort CPU Usage   Quick Sort Runtime	Insertion Sort Memory Usage
+macOS (3.9)	            0.05%	                0.021297s	        0.000000 MB
+macOS (3.10)	        0.25%	                0.018475s	        0.000000 MB
+Windows (3.9)	        0.00%	                0.027898s	        0.210938 MB
+Windows (3.10)	        0.00%	                0.027051s	        0.226562 MB
+Ubuntu (3.9)	        0.00%	                0.028827s	        0.000000 MB
+Ubuntu (3.10)	        0.00%	                0.028293s	        0.000000 MB
+
 
 Possible work division, three sub-teams:
 1. Adding pre-commit and implementing algorithm code and documentation (tasks 1,2,6).
@@ -37,3 +46,4 @@ Implemented the black linting. Black automatically reformats Python code to adhe
 Black Linting was pushed through and reformatted the Python code to follow the style
 https://github.com/psf/black
 https://black.readthedocs.io/en/stable
+
