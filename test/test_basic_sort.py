@@ -8,7 +8,7 @@ import gc
 from basic_sort_UNIQUE_SUFFIX.int_sort import bubble, quick, insertion
 
 # --- CONSTANTS AND SETUP ---
-LIST_SIZE = 15000 
+LIST_SIZE = 15000
 NUM_ITERATIONS = 1
 PERFORMANCE_TEST_LIST = [random.randint(1, 10000) for _ in range(LIST_SIZE)]
 EXPECTED_SORTED = sorted(PERFORMANCE_TEST_LIST)
@@ -97,26 +97,26 @@ def test_insertion(int_lists):
     # 1. FUNCTIONALITY CHECK
     for original_list in int_lists:
         assert is_sorted(insertion(original_list))
-        
+
     # 2. PERFORMANCE MEASUREMENT (Memory Usage)
-    
+
     # Clean up residual memory before measurement
-    gc.collect() 
-    
-    gc.disable() 
+    gc.collect()
+
+    gc.disable()
     mem_before = CURRENT_PROCESS.memory_info().rss
-    
+
     for _ in range(NUM_ITERATIONS):
         list_copy = PERFORMANCE_TEST_LIST[:]
         insertion(list_copy)
-    
+
     mem_after = CURRENT_PROCESS.memory_info().rss
-    
-    gc.enable() 
-    
+
+    gc.enable()
+
     # Calculate the memory difference (overhead) in megabytes
     memory_overhead_mb = (mem_after - mem_before) / (1024 * 1024)
-    
+
     print("\n--- MEASUREMENT ---")
-    print(f"Insertion Sort Memory Usage: {memory_overhead_mb:.6f} MB") 
+    print(f"Insertion Sort Memory Usage: {memory_overhead_mb:.6f} MB")
     print("-------------------\n")
