@@ -51,7 +51,7 @@ jobs:
           pip install -r requirements-dev.txt
       - name: Test with pytest (and collect measurements)
         run: |
-          python -m pytest
+          python -m pytest -s
 
   packaging:
     # only run the packaging if testing passed
