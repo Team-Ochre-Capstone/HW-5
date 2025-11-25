@@ -5,7 +5,7 @@ import psutil
 import os
 import random
 import gc
-from basic_sort_UNIQUE_SUFFIX.int_sort import bubble, quick, insertion
+from basic_sort_The_Slice_Is_Right.int_sort import bubble, quick, insertion
 
 # --- CONSTANTS AND SETUP ---
 LIST_SIZE = 15000
