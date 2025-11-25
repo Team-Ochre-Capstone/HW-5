@@ -10,7 +10,6 @@ from basic_sort_UNIQUE_SUFFIX.int_sort import bubble, quick, insertion
 # --- CONSTANTS AND SETUP ---
 # Per user request, setting list size to 5000.
 LIST_SIZE = 5000
-# Run the sort 1000 times to get stable, measurable results
 NUM_ITERATIONS = 5
 PERFORMANCE_TEST_LIST = [random.randint(1, 10000) for _ in range(LIST_SIZE)]
 EXPECTED_SORTED = sorted(PERFORMANCE_TEST_LIST)
@@ -55,13 +54,11 @@ def test_bubble(int_lists):
     # Measure CPU usage over the last 0.1s interval which includes the work
     cpu_after = CURRENT_PROCESS.cpu_percent(interval=0.1)
 
-    # Since the work finished long before the interval, we use the average,
-    # which is now based on a large amount of actual work time.
     approx_cpu_usage = (cpu_before + cpu_after) / 2
 
-    # CRITICAL: Print the measurement for the GitHub Actions log to capture
+    # Print the measurement for the GitHub Actions log to capture
     print("\n--- MEASUREMENT ---")
-    print(f"Bubble Sort CPU Usage: {approx_cpu_usage:.2f}%")
+    print(f"Bubble Sort CPU Usage: {approx_cpu_usage:.10f}%")
     print("-------------------\n")
 
 
@@ -89,10 +86,9 @@ def test_quick(int_lists):
     # Calculate the average runtime per single sort
     runtime_per_sort = total_runtime / NUM_ITERATIONS
 
-    # CRITICAL: Print the measurement for the GitHub Actions log to capture
-    # Using 6 decimal places satisfies the .00001s request and more.
+    # Print the measurement for the GitHub Actions log to capture
     print("\n--- MEASUREMENT ---")
-    print(f"Quick Sort Runtime: {runtime_per_sort:.6f}s")
+    print(f"Quick Sort Runtime: {runtime_per_sort:.10f}s")
     print("-------------------\n")
 
 
@@ -124,7 +120,7 @@ def test_insertion(int_lists):
     # Calculate the memory difference (overhead) in megabytes
     memory_overhead_mb = (mem_after - mem_before) / (1024 * 1024)
 
-    # CRITICAL: Print the measurement for the GitHub Actions log
+    # Print the measurement for the GitHub Actions log
     print("\n--- MEASUREMENT ---")
-    print(f"Insertion Sort Memory Usage: {memory_overhead_mb:.2f} MB")
+    print(f"Insertion Sort Memory Usage: {memory_overhead_mb:.10f} MB")
     print("-------------------\n")
